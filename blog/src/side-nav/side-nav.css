@@ -1,0 +1,63 @@
+.side-nav * {
+    box-sizing: border-box;
+}
+
+.side-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.side-nav {
+    position: relative;
+    position: fixed;
+    left: 4rem;
+    top: 4rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-btn {
+    color: rgba(0, 0, 0, 0.52);
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.6rem;
+    transition: transform 0.8s;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background: none;
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.nav-btn-active {
+    transform: rotateZ(90deg);
+}
+
+.nav-list {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.nav-item {
+    font-size: 0.92rem;
+    margin: 2.8rem 0;
+    list-style: none;
+}
+
+.nav-item::after {
+    display: block;
+    content: '';
+    width: 0%;
+    height: 1.6px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.52);
+    transition: width 160ms;
+}
+
+.nav-item:hover::after {
+    width: 90%;
+}

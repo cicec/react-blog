@@ -1,0 +1,14 @@
+.to-top-com Button {
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.to-top-com Button:hover,
+.to-top-com Button:focus {
+    background: none;
+    color: rgba(0, 0, 0, 0.52);
+}
