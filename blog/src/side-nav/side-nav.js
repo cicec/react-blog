@@ -17,9 +17,7 @@ class SideNav extends Component {
     }
 
     toggleCollapsed() {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
+        this.setState({ collapsed: !this.state.collapsed });
     }
 
     render() {

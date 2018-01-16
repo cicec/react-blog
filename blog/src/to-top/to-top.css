@@ -12,3 +12,11 @@
     background: none;
     color: rgba(0, 0, 0, 0.52);
 }
+
+@media screen and (max-width: 992px) {
+    .to-top-com Button {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+    }
+}

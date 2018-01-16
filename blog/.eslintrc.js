@@ -34,5 +34,7 @@ module.exports = {
         "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
         //  强制在花括号内使用一致的换行符
         "object-curly-newline": "off",
+        //  要求或禁止使用拖尾逗号
+        "comma-dangle": ["error", "only-multiline"]
     }
 };

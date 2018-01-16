@@ -13,3 +13,12 @@
     font-size: 1.2rem;
     margin: 0 1rem;
 }
+
+@media screen and (max-width: 992px) {
+    .title {
+        margin: 3.2rem;
+    }
+    .title-text {
+        font-size: 1.4rem;
+    }
+}

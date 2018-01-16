@@ -10,7 +10,6 @@
 }
 
 .side-nav {
-    position: relative;
     position: fixed;
     left: 4rem;
     top: 4rem;
@@ -60,4 +59,12 @@
 
 .nav-item:hover::after {
     width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .side-nav {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+    }
 }
