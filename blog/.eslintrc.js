@@ -20,8 +20,6 @@ module.exports = {
         "react/jsx-indent": "off",
         //  JSX属性缩进
         "react/jsx-indent-props": "off",
-        //  强制在模块顶部调用 require()
-        "global-require": "off",
         //  强制使用一致的缩进
         "indent": ["error", 4, { "SwitchCase": 1 }],
         //  强制使用一致的换行符风格
@@ -35,6 +33,8 @@ module.exports = {
         //  强制在花括号内使用一致的换行符
         "object-curly-newline": "off",
         //  要求或禁止使用拖尾逗号
-        "comma-dangle": ["error", "only-multiline"]
+        "comma-dangle": ["error", "only-multiline"],
+        //  要求或禁止使用分号代替 ASI
+        // "semi": ["error", "never"]
     }
 };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Tooltip, Button, Icon } from 'antd';
+import { Button, Icon } from 'antd';
 import NavList from './nav-list';
 import './side-nav.css';
 
@@ -23,10 +23,10 @@ class SideNav extends Component {
     render() {
         const { collapsed } = this.state;
         return (
-            <div className="side-nav">
-                <Tooltip title={collapsed ? '展开导航' : '收起导航'} placement="right">
-                    <Button className={`nav-btn ${collapsed ? '' : 'nav-btn-active'}`} onClick={this.toggleCollapsed}><Icon type="menu-unfold" className="nav-btn-icon" /></Button>
-                </Tooltip>
+            <div className={`side-nav ${collapsed ? '' : 'side-nav-active'}`}>
+                {/* <Tooltip title={collapsed ? '展开导航' : '收起导航'} placement="right"> */}
+                <Button className={`nav-btn ${collapsed ? '' : 'nav-btn-active'}`} onClick={this.toggleCollapsed}><Icon type="menu-unfold" className="nav-btn-icon" /></Button>
+                {/* </Tooltip> */}
                 <NavList collapsed={collapsed} navItemOnClick={this.props.navItemOnClick} />
             </div>
         );

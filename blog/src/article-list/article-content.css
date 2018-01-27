@@ -32,6 +32,10 @@
     font-size: 0.92rem;
 }
 
+.article-content img {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 992px) {
     .article-content {
         margin-top: 3.2rem;

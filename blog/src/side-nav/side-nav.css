@@ -63,8 +63,35 @@
 
 @media screen and (max-width: 992px) {
     .side-nav {
-        position: absolute;
-        top: 32px;
-        left: 32px;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .side-nav-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        transition: opacity 2s;
+    }
+
+    .side-nav-active,
+    .nav-btn-active,
+    .nav-btn-active:hover,
+    .nav-btn-active:active,
+    .nav-btn-active:focus {
+        color: rgba(255, 255, 255, 0.68);
+    }
+
+    .nav-btn {
+        font-size: 1.4rem;
+    }
+
+    .nav-item::after {
+        height: 1.2px;
+        background: rgba(255, 255, 255, 0.68);
     }
 }

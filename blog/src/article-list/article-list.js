@@ -10,7 +10,7 @@ const ArticleList = () => (
         <Title />
         <QueueAnim type="bottom">
             {
-                ArticlesInfo.map(item => (
+                ArticlesInfo.sort((a, b) => a.id > b.id).map(item => (
                     <ArticleItem
                         key={item.id}
                         id={item.id}
