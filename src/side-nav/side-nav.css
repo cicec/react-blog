@@ -1,0 +1,97 @@
+.side-nav * {
+    box-sizing: border-box;
+}
+
+.side-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.side-nav {
+    position: fixed;
+    left: 4rem;
+    top: 4rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-btn {
+    color: rgba(0, 0, 0, 0.52);
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.6rem;
+    transition: transform 0.8s;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background: none;
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.nav-btn-active {
+    transform: rotateZ(90deg);
+}
+
+.nav-list {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.nav-item {
+    font-size: 0.92rem;
+    margin: 2.8rem 0;
+    list-style: none;
+}
+
+.nav-item::after {
+    display: block;
+    content: '';
+    width: 0%;
+    height: 1.6px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.52);
+    transition: width 160ms;
+}
+
+.nav-item:hover::after {
+    width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .side-nav {
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .side-nav-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        transition: opacity 2s;
+    }
+
+    .side-nav-active,
+    .nav-btn-active,
+    .nav-btn-active:hover,
+    .nav-btn-active:active,
+    .nav-btn-active:focus {
+        color: rgba(255, 255, 255, 0.68);
+    }
+
+    .nav-btn {
+        font-size: 1.4rem;
+    }
+
+    .nav-item::after {
+        height: 1.2px;
+        background: rgba(255, 255, 255, 0.68);
+    }
+}
