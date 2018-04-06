@@ -2,7 +2,7 @@
   "name": "course-design",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://clancysong.github.io/react-blog",
+  "homepage": "https://clancysong.github.io/react-blog/dist",
   "dependencies": {
     "antd": "^3.0.0",
     "prop-types": "^15.6.0",
